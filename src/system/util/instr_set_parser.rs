@@ -2,7 +2,7 @@ use std::collections::HashMap;
 use std::fs;
 use std::usize;
 
-use crate::cpu::cpu::{Cpu, Op, OpInfo, AddrMode, Instruction};
+use crate::system::cpu::{Cpu, Op, OpInfo, AddrMode, Instruction};
 
 pub struct InstrSetParser {
     pub addr_mode_map: HashMap<&'static str, (AddrMode, fn (cpu: &mut Cpu))>,

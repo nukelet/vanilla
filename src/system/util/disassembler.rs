@@ -1,4 +1,4 @@
-use crate::cpu::cpu::{ Op, AddrMode };
+use crate::system::cpu::{ Op, AddrMode };
 
 pub struct Disassembler<'a> {
     pub data: Vec<u8>,
